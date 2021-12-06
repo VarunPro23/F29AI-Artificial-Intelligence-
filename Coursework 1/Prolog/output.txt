@@ -1,0 +1,90 @@
+This is the text file containing all the queries to be tested on the prolog coursework.
+The queries can be run on the terminal to be tested by the user.
+
+To run the program, follow these steps.
+    1. Open a new terminal
+    2. Type 'swipl -s monster.pl'
+
+@Author     Varun Senthil Kumar, H00332328
+
+-------------------------------------------------------------------------------------------------
+
+Sub Part 1 tests
+
+    input:      type(X).                    to get the type
+    output:     X = normal
+
+    Type ; in the terminal to get all solutions.
+
+    input:      monster(X,Y).               to get the monster and its type
+    output:     X = bewear
+                Y = normal
+
+    Type ; in the terminal to get all solutions.
+    
+    input:      move(X,Y).                  to get the ability and its type
+    output:     X = strength
+                Y = normal
+
+    Type ; in the terminal to get all solutions.
+
+    input:      monsterMove(X,Y).           to get the monster and its ability
+    output:     X = bewear
+                Y = strength
+
+-------------------------------------------------------------------------------------------------
+
+Sub Part 2 tests
+
+    input:      typeEffectiveness(X,Y,Z).       to get X is Z effective on Y
+    output:     X = Y
+                Y = dragon
+                Z = strong
+    
+    Type ; in the terminal to get all solutions.
+
+-------------------------------------------------------------------------------------------------
+
+Sub Part 3 tests
+
+    input:      moreEffective(strong,ordinary).        
+    output:     true
+
+    input:      moreEffective(ordinary,strong).
+    output:     false
+-------------------------------------------------------------------------------------------------
+
+Sub Part 4 tests
+
+    input:      moreEffectiveThan(strong,superweak).
+    output:     true
+
+    input:      moreEffectiveThan(superweak,ordinary).
+    output:     false
+
+-------------------------------------------------------------------------------------------------
+
+Sub part 5 tests
+
+    input:      monsterMoveMatch(polteageist,teaTime).
+    output:     false
+
+    input:      monsterMoveMatch(rookidee,peck).
+    output:     true
+
+-------------------------------------------------------------------------------------------------
+
+Sub Part 6 tests
+
+    input:      moreEffectiveMove(dragonClaw,revenge,ghost).
+    output:     true
+
+    input:      moreEffectiveMove(facade,superpower,normal).
+    output:     false
+
+-------------------------------------------------------------------------------------------------
+
+Sub Part 7 tests
+
+    input:      moreEffectiveMonster(rookidee,braveBird,sirfetchd,brickBreak).
+    output:     true
