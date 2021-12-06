@@ -1,3 +1,5 @@
+**F29AI coursework 2 Tic-Tac-Toe**
+
 This repository contains the files for coursework 2 of the course **F29AI**.
 
 This project is about creating the game Tic Tac Toe using the concepts of Value Iteration, Policy Iteration and Q Learning.
